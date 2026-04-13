@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes 💌</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+    <button onclick="playMusic()" id="musicBtn">🎵</button>
+
+<audio id="music" loop>
+    <source src="notes.mpeg" type="audio/mpeg">
+</audio>
+<h1>Little Things I Wanna Say 💌</h1>
+
+<div id="container">
+
+    <button onclick="prev()">⬅️</button>
+
+    <div id="noteBox">
+        <p id="note">💖</p>
+    </div>
+
+    <button onclick="next()">➡️</button>
+
+</div>
+
+<script src="notes.js"></script>
+
+</body>
+</html>
