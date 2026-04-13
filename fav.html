@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <body>
+  <button id="musicBtn" onclick="document.getElementById('music').play()">
+    🎵 
+</button>
+
+<audio id="music" loop>
+    <source src="fav.mpeg" type="audio/mpeg">
+</audio>
+<link rel="stylesheet" href="fav.css">
+<h1>Our Favorite Memories 💖</h1>
+<div id="slider">
+
+    <button id="prev" onclick="prev()">⬅️</button>
+
+    <div id="content">
+        <img id="photo" src="pic1.jpg">
+        <p id="caption"></p>
+    </div>
+
+    <button id="next" onclick="next()">➡️</button>
+
+</div>
+<script src="fav.js"></script>
+
+
+</body>
+</html>
