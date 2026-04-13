@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    background-color: lightpink;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#box1{
+    margin: left;
+    border: 5px solid;
+
+    font-size: 20px;
+    height: 400px;
+
+    width: 350px;
+    background-color: lightpink;
+    padding: 30px;
+
+    border-radius: 30px;   /* curly edges */
+}
+#p1{
+    color: darkblue;
+}
+#p{
+    color: red;
+}
+#p2{
+    color: brown;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  
+    padding-bottom: 50px;
+}
+
+#nav a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: pink;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: black;
+    transition: 0.3s;
+}
+#nav a:hover{
+    background-color: hotpink;
+    transform: scale(1.1);
+}
+#musicBtn{
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    bottom: 20px;
+    right: 20px;
+}
+
+#musicBtn:hover{
+    transform: scale(1.1);
+    background-color: hotpink;
+}
