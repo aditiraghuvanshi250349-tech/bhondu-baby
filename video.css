@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    background: lightpink;
+    overflow: hidden;
+    font-family: Arial;
+    background-image: url(video.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* horizontal container */
+.container{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* each slide */
+.slide{
+    min-width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* VIDEO BOX */
+video{
+    width: 350px;        /* fixed size */
+    height: 500px;       /* keeps it tall like phone */
+    object-fit: contain; /* IMPORTANT: no cropping */
+    border-radius: 20px;
+    background-color: black; /* fills empty space nicely */
+}
+/* caption */
+.slide p{
+    margin-top: 15px;
+    border: 5px solid;
+    font-size: 20px;
+    color: darkred;
+    background: rgba(255,255,255,0.6);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+/* arrows */
+#prev, #next{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: pink;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#prev{ left: 15px; }
+#next{ right: 15px; }
+
+#prev:hover, #next:hover{
+    background: hotpink;
+}
+#hint{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
